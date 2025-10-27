@@ -13,10 +13,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
         
-        try:
-            self.setWindowIcon(QIcon('icon.png'))
-        except TypeError as e:
-            print('Er: {e}')
+        self.setWindowIcon(QIcon('icon.png'))
         self.setWindowTitle('Game Helper')
         
         # Создаем stacked widget для управления страницами
@@ -43,7 +40,7 @@ class MainWindow(QMainWindow):
     
     def create_main_page(self):
         """Создает главную страницу из UI файла"""
-        widget = QWidget()  # Изменено с QMainWindow на QWidget
+        widget = QMainWindow()  # Изменено с QMainWindow на QWidget
         loadUi('templates/main_window.ui', widget)
         return widget
     
