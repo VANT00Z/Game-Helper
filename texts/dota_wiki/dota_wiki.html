@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    Заголовок - font-size: 48px; font-weight: 900;
+    Подзаголовок - font-size: 32px; font-weight: 900;
+    Заголовок строки - font-size: 24px; font-weight: 800;
+    Подзаголовок строки - font-size: 32px; font-weight: 700;
+    Строка - font-size: 24px; font-weight: 450;
+    Текст - font-size: 16px; font-weight: 450;
+    -->
+    <style>
+         @font-face {
+            font-family: 'Druk';
+            src: url('Font-Druk.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Druk', sans-serif;
+        }
+
+        .title{
+            font-weight: 900;
+            font-size: 48px;
+             font-weight: 900;
+            text-align: center;
+        }
+
+        .Charasters{
+            font-weight: 900;
+            font-size: 32px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .Charaster{
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .spell{
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .title_spells{
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .string{
+            font-size: 24px;
+            font-weight: 450;
+        }
+
+        .text{
+            font-size: 16px;
+            font-weight: 450;
+            padding-left: 10vh;
+            text-align: justify;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <!--- Создаем title (Dota 2, персонажи)--->
+    <h1 class="title">Dota 2</h1>
+    <p></p>
+    <h3 class="Charasters">Персонажи</h3>
+
+    <!--Первый персонаж-->
+    <h4 class="Charaster">Alchemist (Алхимик)</h4>
+    <mark class="title_spells">Способности персонажа:</mark>
+    <ul>
+
+    <!--Первый спел-->
+        <li class="spell">Acid Spray</li>
+        <p>
+            <strong class="string">Описание:</strong>
+            <p class="text">Распыляет в указанной области облако кислоты, которое наносит врагам периодический урон и снижает их броню.</p>
+        </p>
+        <p>
+            <strong class="string">Способность:</strong>
+            <p class="text" style="color: blue;">Направленная на область</p>
+        </p>
+        <p>
+            <strong class="string">Действует на:</strong>
+            <p class="text">Врагов</p>
+        </p>
+        <p>
+            <strong class="string">Тип урона:</strong>
+            <p class="text" style="color:red">Физический</p>
+        </p>
+        <p>
+            <strong class="string">Дополнительные сведенья:</strong>
+            <p class="text">Урон в секунду:</p>
+            <p class="text">25/30/35/40</p>
+            <p class="text">Радиус действия:</p>
+            <p class="text">350/400/450/500</p>
+            <p class="text"><img src="/resources/Cooldown_symbol.jpg"> Перезарядка:</p>
+            <p class="text">22/21/20/19</p>
+            <p class="text"><img src="/resources/Mana_symbol.jpg"> Расход маны:</p>
+            <p class="text">105/110/115/120</p>
+        </p>
+
+        <!--Второй спелл-->
+        <li class="spell">Unstable Concoction</li>
+            <p>
+                <strong class="string">Описание:</strong>
+                <p class="text">Герой начинает встряхивать колбу с гремучей смесью, которую можно бросить во вражеского героя. При попадании колба взорвётся, оглушив всех противников в радиусе взрыва и нанеся им урон. Чем дольше смесь встряхивать, тем больше урона она нанесёт и тем дольше будет оглушение. Пока герой не бросит колбу, он передвигается быстрее. Максимальный эффект достигается после 5 сек., однако если не выбросить колбу через 5,5 секунды, она взорвётся в руках героя, подействовав и на него самого.</p>
+            </p>
+            <p>
+                <strong class="string">Способность:</strong>
+                <p class="text" style="color: blue;">Ненаправленная</p>
+            </p>
+            <p>
+                <strong class="string">Действует на:</strong>
+                <p class="text">Себя</p>
+            </p>
+            <p>
+                <strong class="string">Тип урона:</strong>
+                <p class="text" style="color:red">Физический</p>
+            </p>
+            <p>
+                <strong class="string">Дополнительные сведенья:</strong>
+                <p class="text">Максимальный урон:</p>
+                <p class="text">150/220/290/360</p>
+                <p class="text">Макс. оглушение:</p>
+                <p class="text">1,7/2,2/2,7/3,2</p>
+                <p class="text"><img src="/resources/Cooldown_symbol.jpg"> Перезарядка:</p>
+                <p class="text">17</p>
+                <p class="text"><img src="/resources/Mana_symbol.jpg"> Расход маны:</p>
+                <p class="text">100</p>
+            </p>
+
+        <!--Связанный спел-->
+        <li class="spell">Unstable Concoction Throw</li>
+            <p>
+                <strong class="string">Описание:</strong>
+                <p class="text">Бросайте, пока не взорвалось!</p>
+            </p>
+            <p>
+                <strong class="string">Способность:</strong>
+                <p class="text" style="color: blue;">Направленная на существо</p>
+            </p>
+            <p>
+                <strong class="string">Действует на:</strong>
+                <p class="text">Вражеских героев</p>
+            </p>
+            <p>
+                <strong class="string">Тип урона:</strong>
+                <p class="text" style="color: red">Физический</p>
+            </p>
+            <p>
+                <strong class="string">Дополнительные сведенья:</strong>
+                <p class="text">Максимальный урон:</p>
+                <p class="text">150/220/290/360</p>
+                <p class="text">Макс. оглушение:</p>
+                <p class="text">1,7/2,2/2,7/3,2</p>
+                <p class="text"><img src="/resources/Cooldown_symbol.jpg"> Перезарядка:</p>
+                <p class="text">0</p>
+                <p class="text"><img src="/resources/Mana_symbol.jpg"> Расход маны:</p>
+                <p class="text">0</p>
+            </p>
+            <p class="string">Способность связана со способностью Unstable Concoction</p>
+
+        <!--Третий спел-->
+        <li class="spell">Corrosive Weaponry</li>
+        <p>
+            <strong class="string">Описание:</strong>
+            <p class="text">Герой усиливает свои оружие и способности кислотой, которая снижает скорость передвижения и базовый урон его жертв.
+                Этот эффект складывается. Атаки героя накладывают 2 эффекта, а Unstable Concoction накладывает 1 эффект за каждую секунду подготовки.
+            </p>
+        </p>
+        <p>
+            <strong class="string">Способность:</strong>
+            <p class="text" style="color: blue;">Пассивная</p>
+        </p>
+        <p>
+            <strong class="string">Действует на:</strong>
+            <p class="text">Себя</p>
+        </p>
+        <p>
+            <strong class="string">Дополнительные сведенья:</strong>
+            <p class="text">Максимум эффектов:</p>
+            <p class="text">7/10/13/16</p>
+            <p class="text">Замедление передвижения за эффект:</p>
+            <p class="text">2%/2,5%/3%/3,5%</p>
+            <p class="text">Снижение базового урона от атак за эффект:</p>
+            <p class="text">2%/2,5%/3%/3,5%</p>
+            <p class="text">Длительность эффекта:</p>
+            <p class="text">4</p>
+        </p>
+
+        <!--Ультимейт-->
+        <li class="spell">Chemical Rage</li>
+            <p class="string" style="font-style: italic;">Ульимейт</p>
+            <p>
+                <strong class="string">Описание:</strong>
+                <p class="text">Особая химическая смесь разъяряет героя, отчего задержка перед его атакой уменьшается, а скорость его передвижения и восстановление здоровья увеличивается.</p>
+            </p>
+            <p>
+                <strong class="string">Способность:</strong>
+                <p class="text" style="color: blue;">Ненаправленная</p>
+            </p>
+            <p>
+                <strong class="string">Действует на:</strong>
+                <p class="text">Себя</p>
+            </p>
+            <p>
+                <strong class="string">Тип урона:</strong>
+                <p class="text">-</p>
+            </p>
+            <p>
+                <strong class="string">Дополнительные сведенья:</strong>
+                <p class="text">Время трансформации: </p>
+                <p class="text">0,35</p>
+                <p class="text">Базовый интервал атаки:</p>
+                <p class="text">1,2/1,1/1 > <img src="/resources/Talent_tree_symbol.jpg"> 1,1/1/0,9</p>
+                <p class="text">Доп. восстановление здоровья:</p>
+                <p class="text">60/90/120 > <img src="/resources/Talent_tree_symbol.jpg"> 110/140/170</p>
+                <p class="text">Доп. скорость передвижения:</p>
+                <p class="text"> 20/30/40 > <img src="/resources/Talent_tree_symbol.jpg"> 70/80/90</p>
+                <p class="text">Доп. ослабления от Corrosive Weaponry:</p>
+                <p class="text">1,5%</p>
+                <p class="text">Длительность:</p>
+                <p class="text">30</p>
+                <p class="text"><img src="/resources/Cooldown_symbol.jpg"> Перезарядка:</p>
+                <p class="text">60</p>
+                <p class="text"><img src="/resources/Mana_symbol.jpg"> Расход маны:</p>
+                <p class="text">50/75/100</p>
+            </p>
+            <p class="string">При покупке Aghanim's Scepter:</p>
+                <p class="text">Герой может расплавить Aghanim's Scepter, чтобы передать союзнику все его улучшения и свойства.
+                    Сам предмет дарует герою дополнительный урон от атак и способностей за каждый расплавленный для союзников Aghanim's Scepter.
+                </p>
+                <p class="text">Доп. урон от атак за стак:</p>
+                <p class="text">25</p>
+                <p class="text">Доп. урон от заклинаний за стак:</p>
+                <p class="text">5%</p>
+
+        <!--Четвертый спел-->
+        <li class="spell">Greevil's Greed</li>
+        <p>
+            <strong class="string">Описание:</strong>
+            <p class="text">Позволяет синтезировать больше золота из врагов и рун.
+                Дополнительное золото за убийство существ состоит из начального бонуса и нарастающего, который увеличивается с каждым существом, убитым в течение 36 сек. после предыдущего.
+                Также способность умножает золото от рун богатства.
+            </p>
+        </p>
+        <p>
+            <strong class="string">Способность:</strong>
+            <p class="text" style="color: blue;">Пассивная</p>
+        </p>
+        <p>
+            <strong class="string">Действует на:</strong>
+            <p class="text">Себя</p>
+        </p>
+        <p>
+            <strong class="string">Дополнительные сведенья:</strong>
+            <p class="text">Начальный бонус золота:</p>
+            <p class="text">2</p>
+            <p class="text">Нарастающий бонус:</p>
+            <p class="text">2</p>
+            <p class="text">Макс. доп. золото:</p>
+            <p class="text">18</p>
+            <p class="text">Время между убийствами:</p>
+            <p class="text">36</p>
+            <p class="text">Множитель рун богатства:</p>
+            <p class="text">2</p>
+            <p class="string"><img src="/resources/Talent_tree_symbol.jpg"> Бонусы за древо талантов:</p>
+            <p class="text">Бонус к урону за эффект: </p>
+            <p class="text">4</p>
+            <p class="text">Макс. бонус к урону:</p>
+            <p class="text">36</p>
+        </p>
+
+        <!--Шард-->
+        <li class="spell">Greevil's Greed</li>
+        структура способности:
+        <p>
+            <strong class="string">Описание:</strong>
+            <p class="text">Бросает в союзника зелье, которое применяет на него нормальное развеивание, увеличивает восстановление здоровья, а также ускоряет атаку и передвижение.</p>
+        </p>
+        <p>
+            <strong class="string">Способность:</strong>
+            <p class="text" style="color: blue;">Направленная на существо</p>
+        </p>
+        <p>
+            <strong class="string">Действует на:</strong>
+            <p class="text">Союзников</p>
+        </p>
+        <p>
+            <strong class="string">Дополнительные сведенья:</strong>
+            <p class="text">Дальность применения:</p>
+            <p class="text">800</p>
+            <p class="text">Доп. скорость передвижения:</p>
+            <p class="text">30</p>
+            <p class="text">Доп. скорость атаки</p>
+            <p class="text">50</p>
+            <p class="text">Восстановление здоровья:</p>
+            <p class="text">40</p>
+            <p class="text">Длительность:</p>
+            <p class="text">15</p>
+            <p class="text"><img src="/resources/Cooldown_symbol.jpg"> Перезарядка:</p>
+            <p class="text">35</p>
+            <p class="text"><img src="/resources/Mana_symbol.jpg"> Расход маны:</p>
+            <p class="text">100</p>
+        </p>
+    </ul>
+    <p></p>
+</body>
+</html>

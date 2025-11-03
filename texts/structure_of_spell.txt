@@ -1,0 +1,28 @@
+структура способности:
+<p>
+            <strong class="string">Описание:</strong>
+            <p class="text"></p>
+        </p>
+        <p>
+            <strong class="string">Способность:</strong>
+            <p class="text" style="color: blue;"></p>
+        </p>
+        <p>
+            <strong class="string">Действует на:</strong>
+            <p class="text"></p>
+        </p>
+        <p>
+            <strong class="string">Тип урона:</strong>
+            <p class="text" style="color:red, blue, yellow"></p>
+        </p>
+        <p>
+            <strong class="string">Дополнительные сведенья:</strong>
+            <p class="text">Урон в секунду:</p>
+            <p class="text"></p>
+            <p class="text">Радиус действия:</p>
+            <p class="text"></p>
+            <p class="text"><img src="/resources/Cooldown_symbol.jpg"> Перезарядка:</p>
+            <p class="text"></p>
+            <p class="text"><img src="/resources/Mana_symbol.jpg"> Расход маны:</p>
+            <p class="text"></p>
+        </p>
