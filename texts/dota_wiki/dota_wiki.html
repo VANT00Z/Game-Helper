@@ -10,7 +10,7 @@
     Текст - font-size: 16px; font-weight: 450;
     -->
     <style>
-         @font-face {
+        @font-face {
             font-family: 'Druk';
             src: url('Font-Druk.otf') format('opentype');
             font-weight: normal;
@@ -62,17 +62,35 @@
             text-align: justify;
             max-width: 600px;
         }
+
+        .text-ex{
+            font-size: 16px;
+            font-weight: 450;
+            padding-left: 10vh;
+            text-align: justify;
+            max-width: 600px;
+            color: blueviolet;
+        }
+
+        .text-shard{
+            font-size: 16px;
+            font-weight: 450;
+            padding-left: 10vh;
+            text-align: justify;
+            max-width: 600px;
+            color: royalblue;
+        }
     </style>
 </head>
 <body>
     <!--- Создаем title (Dota 2, персонажи)--->
-    <h1 class="title">Dota 2</h1>
+    <p class="title">Dota 2</p>
     <p></p>
-    <h3 class="Charasters">Персонажи</h3>
+    <p class="Charasters">Персонажи</p>
 
     <!--Первый персонаж-->
-    <h4 class="Charaster">Alchemist (Алхимик)</h4>
-    <mark class="title_spells">Способности персонажа:</mark>
+    <p class="Charaster">Alchemist (Алхимик)</p>
+    <p class="title_spells">Способности персонажа:</p>
     <ul>
 
     <!--Первый спел-->
@@ -309,6 +327,300 @@
             <p class="text">100</p>
         </p>
     </ul>
-    <p></p>
+<p></p>
+
+<!--Второй персонаж-->
+<p class="Charaster">Axe (Акс)</p>
+    <p class="title_spells">Способности персонажа:</p>
+    <ul>
+
+    <!--Первый спел-->
+        <li class="spell">Berserker's Call</li>
+                <p>
+            <strong class="string">Описание:</strong>
+            <p class="text">Герой бросает вызов ближайшим врагам, заставляя их атаковать его, а также получает бонус к броне на время действия способности.</p>
+        </p>
+        <p>
+            <strong class="string">Способность:</strong>
+            <p class="text" style="color: blue;">Ненаправленная</p>
+        </p>
+        <p>
+            <strong class="string">Действует на:</strong>
+            <p class="text">Врагов и Себя</p>
+        </p>
+        <p>
+            <strong class="string">Дополнительные сведенья:</strong>
+            <p class="text">Радиус:</p>
+            <p class="text">315 > 415</p>
+            <p class="text">Дополнительная броня:</p>
+            <p class="text">16/19/22/25</p>
+            <p class="text">Длительность:</p>
+            <p class="text"> 1,8/2,2/2,6/3</p>
+            <p class="text">Перезарядка:</p>
+            <p class="text">17/15/13/11</p>
+            <p class="text">Расход маны:</p>
+            <p class="text">80/90/100/110</p>
+        </p>
+        <p class="string">При покупке Aghanim's Scepter:</p>
+                <p class="text">Уменьшает перезарядку и применяет на жертв эффект способности Battle Hunger.</p>
+                <p class="text-ex">Перезарядка:</p>
+                <p class="text-ex">14/12/10/8</p>
+
+    <!--Второй спелл-->
+        <li class="spell">Battle Hunger</li>
+            <p>
+                <strong class="string">Описание:</strong>
+                <p class="text">Приводит врага в бешенство, нанося ему урон, пока он кого-нибудь не убьёт или действие способности не закончится.
+                    Урон от способности увеличивается в зависимости от брони владельца способности.
+                    Скорость передвижения жертвы уменьшается, когда она не смотрит в сторону владельца способности.</p>
+            </p>
+            <p>
+                <strong class="string">Способность:</strong>
+                <p class="text" style="color: blue;">Направленная на существо</p>
+            </p>
+            <p>
+                <strong class="string">Действует на:</strong>
+                <p class="text">Врагов</p>
+            </p>
+            <p>
+                <strong class="string">Тип урона:</strong>
+                <p class="text" style="color:red">Физический</p>
+            </p>
+            <p>
+                <strong class="string">Дополнительные сведенья:</strong>
+                <p class="text">Дальность применения:</p>
+                <p class="text">700/775/850/925</p>
+                <p class="text">Базовый урон в секунду:</p>
+                <p class="text">10/15/20/25</p>
+                <p class="text">Брони в виде урона каждую секунду:</p>
+                <p class="text">100% > 200%</p>
+                <p class="text">Изменение скорости передвижения:</p>
+                <p class="text">11%/19%/27%/35% > 23%/31%/39%/47%</p>
+                <p class="text">Множитель скорости передвижения/брони на крипах:</p>
+                <p class="text">0,5</p>
+                <p class="text">Длительность:</p>
+                <p class="text">12</p>
+                <p class="text">Перезарядка:</p>
+                <p class="text">20/15/10/5</p>
+                <p class="text">Расход маны:</p>
+                <p class="text">50/60/70/80</p>
+            </p>
+            <p class="string">При покупке Aghanim's Scepter:</p>
+                <p class="text">Уменьшает броню у жертв способности и даёт владельцу бонус к броне за каждую жертву.</p>
+                <p class="text-ex">Действует на:</p>
+                <p class="text-ex">Себя</p>
+                <p class="text-ex">Снижение брони цели:</p>
+                <p class="text-ex">7</p>
+                <p class="text-ex">Дополнительная броня за героя</p>
+                <p class="text-ex">7</p>
+           
+    <!--Третий спел-->
+        <li class="spell">Counter Helix</li>
+        <p>
+            <strong class="string">Описание:</strong>
+            <p class="text">После определённого числа полученных атак герой прокручивает вокруг себя топор, нанося чистый урон всем врагам неподалёку.</p>
+        </p>
+        <p>
+            <strong class="string">Способность:</strong>
+            <p class="text" style="color: blue;">Пассивная</p>
+        </p>
+        <p>
+            <strong class="string">Действует на:</strong>
+            <p class="text">Врагов</p>
+        </p>
+        <p>
+            <strong class="string">Тип урона:</strong>
+            <p class="text" style="color:wheat">Чистый</p>
+        </p>
+        <p>
+            <strong class="string">Дополнительные сведенья:</strong>
+            <p class="text">Радиус</p>
+            <p class="text"></p>
+            <p class="text">Атак для срабатывания:</p>
+            <p class="text"></p>
+            <p class="text">Урон:</p>
+            <p class="text">95/120/145/170 > 125/150/175/200</p>
+            <p class="text">Перезарядка:</p>
+            <p class="text">0,3</p>
+        </p>
+        <p class="string">При покупке Aghanim's Shard:</p>
+                <p class="text">Убирает перезарядку способности.
+                    Каждое её срабатывание применяет на жертв складывающийся эффект, уменьшающий урон их атак по владельцу способности.</p>
+                <p class="text-shard">Максимум эффектов:</p>
+                <p class="text-shard">6</p>
+                <p class="text-shard">Снижение урона от атак:</p>
+                <p class="text-shard">15%</p>
+                <p class="text-shard">Длительность снижения:</p>
+                <p class="text-shard">6</p>
+                <p class="text-shard">Перезарядка</p>
+                <p class="text-shard">0</p>
+
+    <!--Ультимейт-->
+        <li class="spell">Culling Blade</li>
+            <p>
+                <strong class="string">Описание:</strong>
+                <p class="text">Герой находит слабую точку врага и наносит ему чистый урон.
+                    Если убить этой способностью вражеского героя, её перезарядка сбрасывается, броня её владельца навсегда увеличится, а его союзники поблизости временно получат дополнительную скорость.</p>
+            </p>
+            <p>
+                <strong class="string">Способность:</strong>
+                <p class="text" style="color: blue;">Направленная на существо</p>
+            </p>
+            <p>
+                <strong class="string">Действует на:</strong>
+                <p class="text"> Врагов / Союзников</p>
+            </p>
+            <p>
+                <strong class="string">Тип урона:</strong>
+                <p class="text" style="color: wheat">Чистый</p>
+            </p>
+            <p>
+                <strong class="string">Дополнительные сведенья:</strong>
+                <p class="text">Дальность применения:</p>
+                <p class="text">175</p>
+                <p class="text">Радиус ускорения:</p>
+                <p class="text">900</p>
+                <p class="text">Урон/Порог для убийства:</p>
+                <p class="text">275/375/475 > 425/525/625</p>
+                <p class="text">Броня за убийство:</p>
+                <p class="text">1/1,5/2 > 2/2,5/3</p>
+                <p class="text">Доп. скорость передвижения: </p>
+                <p class="text">20%/25%/30%</p>
+                <p class="text">Бонус к броне: </p>
+                <p class="text">20/25/30</p>
+                <p class="text">Длительность ускорения:</p>
+                <p class="text">6 > 10</p>
+                <p class="text">Перезарядка:</p>
+                <p class="text">100/85/70</p>
+                <p class="text">Расход маны:</p>
+                <p class="text">100/125/150</p>
+            </p>
+    </ul>
+<p></p>
+
+<!--Третий персонаж-->
+<h4 class="Charaster"></h4>
+    <mark class="title_spells">Способности персонажа:</mark>
+    <ul>
+
+    <!--Первый спел-->
+        <li class="spell"></li>
+
+    <!--Второй спелл-->
+        <li class="spell"></li>
+            
+    <!--Связанный спел-->
+        <li class="spell"></li>
+           
+    <!--Третий спел-->
+        <li class="spell"></li>
+
+    <!--Ультимейт-->
+        <li class="spell"></li>
+
+    <!--Шард-->
+        <li class="spell"></li>
+    </ul>
+<p></p>
+
+<!--Четвертый персонаж-->
+<h4 class="Charaster"></h4>
+    <mark class="title_spells">Способности персонажа:</mark>
+    <ul>
+
+    <!--Первый спел-->
+        <li class="spell"></li>
+
+    <!--Второй спелл-->
+        <li class="spell"></li>
+            
+    <!--Связанный спел-->
+        <li class="spell"></li>
+           
+    <!--Третий спел-->
+        <li class="spell"></li>
+
+    <!--Ультимейт-->
+        <li class="spell"></li>
+
+    <!--Шард-->
+        <li class="spell"></li>
+    </ul>
+<p></p>
+
+<!--Пятый персонаж-->
+<h4 class="Charaster"></h4>
+    <mark class="title_spells">Способности персонажа:</mark>
+    <ul>
+
+    <!--Первый спел-->
+        <li class="spell"></li>
+
+    <!--Второй спелл-->
+        <li class="spell"></li>
+            
+    <!--Связанный спел-->
+        <li class="spell"></li>
+           
+    <!--Третий спел-->
+        <li class="spell"></li>
+
+    <!--Ультимейт-->
+        <li class="spell"></li>
+
+    <!--Шард-->
+        <li class="spell"></li>
+    </ul>
+<p></p>
+
+<!-- персонаж-->
+<h4 class="Charaster"></h4>
+    <mark class="title_spells">Способности персонажа:</mark>
+    <ul>
+
+    <!--Первый спел-->
+        <li class="spell"></li>
+
+    <!--Второй спелл-->
+        <li class="spell"></li>
+            
+    <!--Связанный спел-->
+        <li class="spell"></li>
+           
+    <!--Третий спел-->
+        <li class="spell"></li>
+
+    <!--Ультимейт-->
+        <li class="spell"></li>
+
+    <!--Шард-->
+        <li class="spell"></li>
+    </ul>
+<p></p>
+
+<!-- персонаж-->
+<h4 class="Charaster"></h4>
+    <mark class="title_spells">Способности персонажа:</mark>
+    <ul>
+
+    <!--Первый спел-->
+        <li class="spell"></li>
+
+    <!--Второй спелл-->
+        <li class="spell"></li>
+            
+    <!--Связанный спел-->
+        <li class="spell"></li>
+           
+    <!--Третий спел-->
+        <li class="spell"></li>
+
+    <!--Ультимейт-->
+        <li class="spell"></li>
+
+    <!--Шард-->
+        <li class="spell"></li>
+    </ul>
+<p></p>
 </body>
 </html>

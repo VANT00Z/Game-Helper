@@ -1,0 +1,53 @@
+<ul>
+    <li class="title-of-line"></li>
+            <p>
+                <strong class="line">Описание:</strong>
+                <p class="text"></p>
+            </p>
+            <p>
+                <strong class="line">Цена:</strong>
+                <p class="text"></p>
+            </p>
+            <p>
+                <strong class="line">Ёмкость магазина:</strong>
+                <p class="text"></p>
+            </p>
+            <p>
+                <strong class="line">Скорострельность:</strong>
+                <p class="text"></p>
+            </p>
+            <p>
+                <strong class="line">Время перезарядки:</strong>
+                <p class="text"></p>
+            </p>
+            <p>
+                <strong class="line">Урон без брони</strong>
+                <p class="text">Голова:</p>
+                <p class="text">Грудь и руки:</p>
+                <p class="text">Живот:</p>
+                <p class="text">Ноги:</p>
+            </p>
+            <p>
+                <strong class="line">Урон в броне</strong>
+                <p class="text">Голова:</p>
+                <p class="text">Грудь и руки:</p>
+                <p class="text">Живот:</p>
+                <p class="text">Ноги:</p>
+            </p>
+            <p>
+                <strong class="line">Награда за убийство:</strong>
+                <p class="text"></p>
+            </p>
+            <p>
+                <strong class="line">Сторона:</strong>
+                <p class="text" style="color:orange, blue"></p>
+            </p>
+            <p>
+                <strong class="line">Дальность поражения:</strong>
+                <p class="text"></p>
+            </p>
+            <p>
+                <strong class="line">Тип стрельбы:</strong>
+                <p class="text"></p>
+            </p>
+</ul>

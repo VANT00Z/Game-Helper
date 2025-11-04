@@ -16,10 +16,33 @@ class WikiWindow(QWidget):
 
         self.dotaCheckBox.stateChanged.connect(self.on_dota_changed)
         self.csCheckBox.stateChanged.connect(self.on_cs_changed)
-
+        
         self.back_btn = QPushButton('<-', self)
-        self.back_btn.resize(100, 100)
+        self.back_btn.setStyleSheet("""
+            QPushButton {
+                background-color: rgba(217, 217, 217, 1);
+                color: #333;
+                text-decoration: none;
+                border-radius: 10px;
+                font-weight: 900;
+                font-size: 24px;
+            }
+        """)
+        self.back_btn.resize(40, 20)
         self.back_btn.clicked.connect(self.back)
+        
+        self.add_html_dota('texts\dota_wiki\dota_wiki.html')
+        self.add_html_cs('texts\cs_wiki\cs_wiki.html')
+    
+    def add_html_dota(self, path):
+        with open(path, 'r', encoding='utf-8') as file:
+                html_content = file.read()
+                self.textDota.setHtml(html_content)
+    
+    def add_html_cs(self, path):
+        with open(path, 'r', encoding='utf-8') as file:
+                html_content = file.read()
+                self.textCs.setHtml(html_content)            
     
     '''Ивент добавления фильтров'''
     def on_dota_changed(self, state):

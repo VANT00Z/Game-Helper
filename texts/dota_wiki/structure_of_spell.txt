@@ -1,0 +1,43 @@
+структура способности:
+
+        <p>
+            <strong class="string">Описание:</strong>
+            <p class="text"></p>
+        </p>
+        <p>
+            <strong class="string">Способность:</strong>
+            <p class="text" style="color: blue;"></p>
+        </p>
+        <p>
+            <strong class="string">Действует на:</strong>
+            <p class="text"></p>
+        </p>
+        <p>
+            <strong class="string">Тип урона:</strong>
+            <p class="text" style="color:red, blue, yellow"></p>
+        </p>
+        <p>
+            <strong class="string">Дополнительные сведенья:</strong>
+            <p class="text"></p>
+            <p class="text"></p>
+            <p class="text"></p>
+            <p class="text"></p>
+            <p class="text">Перезарядка:</p>
+            <p class="text"></p>
+            <p class="text">Расход маны:</p>
+            <p class="text"></p>
+        </p>
+
+структура аганима:
+
+<p class="string">При покупке Aghanim's Scepter:</p>
+                <p class="text"></p>
+                <p class="text-ex"></p>
+                <p class="text-ex"></p>
+
+структура шарда
+
+<p class="string">При покупке Aghanim's Shard:</p>
+                <p class="text"></p>
+                <p class="text-ex"></p>
+                <p class="text-ex"></p>

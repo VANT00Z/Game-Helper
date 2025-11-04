@@ -83,7 +83,17 @@ class SearchWindow(QWidget):
         self.search_input.returnPressed.connect(self.perform_search)
         
         self.back_btn = QPushButton('<-', self)
-        self.back_btn.resize(100, 100)
+        self.back_btn.setStyleSheet("""
+            QPushButton {
+                background-color: rgba(217, 217, 217, 1);
+                color: #333;
+                text-decoration: none;
+                border-radius: 10px;
+                font-weight: 900;
+                font-size: 24px;
+            }
+        """)
+        self.back_btn.resize(40, 20)
         self.back_btn.clicked.connect(self.back)
     
     def perform_search(self):
