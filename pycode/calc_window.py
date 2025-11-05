@@ -1,8 +1,8 @@
 import pycode.helper as hp
 
 from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel, QPushButton
-from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QIcon
+from PyQt6.uic import loadUi
 
 
 class CalcWindow(QWidget):
@@ -14,28 +14,7 @@ class CalcWindow(QWidget):
         self.setWindowIcon(QIcon('resources/icon.png'))
         self.setWindowTitle('Калькулятор')
         
-        self.init_ui()
-    
-    def init_ui(self):
-        # Создаем вертикальный layout
-        layout = QVBoxLayout()
-        
-        # Создаем заголовок "Калькулятор"
-        title = QLabel("Калькулятор")
-        title.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        title.setStyleSheet("""
-            QLabel {
-                font-size: 24px;
-                font-weight: bold;
-                padding: 20px;
-            }
-        """)
-        
-        # Добавляем заголовок в layout
-        layout.addWidget(title)
-        
-        # Устанавливаем layout для виджета
-        self.setLayout(layout)
+        loadUi('templates/calc.ui', self)
         
         self.back_btn = QPushButton('<-', self)
         self.back_btn.setStyleSheet("""

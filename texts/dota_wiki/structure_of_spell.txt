@@ -14,7 +14,7 @@
         </p>
         <p>
             <strong class="string">Тип урона:</strong>
-            <p class="text" style="color:red, blue, yellow"></p>
+            <p class="text" style="color:red, blue, orange"></p>
         </p>
         <p>
             <strong class="string">Дополнительные сведенья:</strong>
