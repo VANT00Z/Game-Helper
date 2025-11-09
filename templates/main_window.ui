@@ -38,6 +38,9 @@
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgba(217, 217, 217, 1);
 color: #333;
@@ -61,6 +64,9 @@ margin: 10px;</string>
           <verstretch>0</verstretch>
          </sizepolicy>
         </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgba(217, 217, 217, 1);
 color: #333;
@@ -83,6 +89,9 @@ margin: 10px;</string>
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgba(217, 217, 217, 1);
@@ -141,8 +150,44 @@ margin: 10px;</string>
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Активности</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionW"/>
+    <addaction name="actionCalc"/>
+    <addaction name="actionSearch"/>
+    <addaction name="action"/>
+   </widget>
+   <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbout">
+   <property name="text">
+    <string>О приложении</string>
+   </property>
+  </action>
+  <action name="actionW">
+   <property name="text">
+    <string>Wiki</string>
+   </property>
+  </action>
+  <action name="actionCalc">
+   <property name="text">
+    <string>Калькулятор</string>
+   </property>
+  </action>
+  <action name="actionSearch">
+   <property name="text">
+    <string>Поиск</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>Помощь</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

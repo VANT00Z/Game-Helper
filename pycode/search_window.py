@@ -1,87 +1,31 @@
 import pycode.helper as hp
 
-from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, 
-                             QLineEdit, QPushButton, QLabel)
-from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import QWidget, QPushButton
 from PyQt6.QtGui import QIcon
+from PyQt6.uic import loadUi
+
 
 class SearchWindow(QWidget):
     def __init__(self, last_window):
         super().__init__()
+
         self.last_window = last_window
-        
+
+        loadUi('templates/search.ui', self)
+
         self.setWindowIcon(QIcon('resources/icon.png'))
         self.setWindowTitle('Поиск')
-        
-        self.init_ui()
-    
-    def init_ui(self):
-        
-        main_layout = QVBoxLayout()
-        
-        search_layout = QHBoxLayout()
-        
-        self.search_input = QLineEdit()
-        self.search_input.setPlaceholderText("Введите запрос для поиска...")
-        self.search_input.setStyleSheet("""
-            QLineEdit {
-                padding: 10px;
-                font-size: 14px;
-                border: 2px solid #ccc;
-                border-radius: 5px;
-            }
-        """)
-        
-        search_button = QPushButton("Найти")
-        search_button.setStyleSheet("""
-            QPushButton {
-                padding: 10px 20px;
-                font-size: 14px;
-                background-color: #007bff;
-                color: white;
-                border: none;
-                border-radius: 5px;
-            }
-            QPushButton:hover {
-                background-color: #0056b3;
-            }
-        """)
-        
-        search_layout.addWidget(self.search_input)
-        search_layout.addWidget(search_button)
-        
-        # Заголовок
-        title = QLabel("Поиск")
-        title.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        title.setStyleSheet("""
-            QLabel {
-                font-size: 24px;
-                font-weight: bold;
-                padding: 20px;
-            }
-        """)
-        
-        # Область для результатов
-        self.results_label = QLabel("Результаты поиска будут отображаться здесь...")
-        self.results_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.results_label.setStyleSheet("""
-            QLabel {
-                padding: 20px;
-                color: #666;
-            }
-        """)
-        
-        # Добавляем все в основной layout
-        main_layout.addWidget(title)
-        main_layout.addLayout(search_layout)
-        main_layout.addWidget(self.results_label)
-        
-        self.setLayout(main_layout)
-        
-        # Подключаем кнопку поиска
-        search_button.clicked.connect(self.perform_search)
-        self.search_input.returnPressed.connect(self.perform_search)
-        
+
+        self.searchLine.setPlaceholderText("Введите запрос для поиска...")
+
+        self.resultLabel.hide()
+
+        self.searchLine.returnPressed.connect(
+            lambda: self.perform_search(self.searchLine.text()))
+
+        self.searchButton.clicked.connect(
+            lambda: self.perform_search(self.searchLine.text()))
+
         self.back_btn = QPushButton('<-', self)
         self.back_btn.setStyleSheet("""
             QPushButton {
@@ -95,13 +39,38 @@ class SearchWindow(QWidget):
         """)
         self.back_btn.resize(40, 20)
         self.back_btn.clicked.connect(self.back)
-    
-    def perform_search(self):
+
+    def perform_search(self, request=None):
         """Выполняет поиск и показывает результаты"""
-        query = self.search_input.text().strip()
-        if query:
-            self.results_label.setText(f"Поиск: {query}\n\nРезультаты будут отображаться здесь...")
-            
+        if request:
+            self.resultLabel.setText(
+                f'Результаты поиска по запросу: {request}')
+            self.resultLabel.show()
+            word_request = request.split()
+
+            # читаем html Dota 2
+            with open('texts\dota_wiki\dota_wiki.html', 'r', encoding='utf-8') as file:
+                dota_cont = file.read()
+
+            # читаем html Cs2
+            with open('texts\cs_wiki\cs_wiki.html', 'r', encoding='utf-8') as file:
+                cs_cont = file.read()
+
+            for word in word_request:
+                if len(word_request) > 1:
+
+                    if word in dota_cont:
+                        ind_dota = dota_cont.index(word)
+                        self.searchBrowser.setHtml(dota_cont[ind_dota])
+                    else:
+                        print('Не найдено')
+
+                else:
+                    if request in dota_cont:
+                        self.searchBrowser.setHtml(request)
+                    else:
+                        print('Не найдено')
+
     def back(self):
         """ Возврат в предыдущее окно """
         self.last_window.show()
