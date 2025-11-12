@@ -13,18 +13,10 @@ class CalcWindow(QWidget):
 
         loadUi('templates/calc.ui', self)
 
-        self.setWindowIcon(QIcon('resources/icon.png'))
+        self.setWindowIcon(QIcon('resources/Logo 3.png'))
         self.setWindowTitle('Калькулятор')
 
-        """ Моды """
-        
-        self.classicCheck.stateChanged.connect(self.classic_mode)
-        self.classicCheck.setChecked(True)
-        self.csCheck.stateChanged.connect(self.cs_mode)
-        self.dotaCheck.stateChanged.connect(self.dota_mode)
-        
-        """ Кнопки classic mode"""
-        
+        """ Функционал classic mode """
         self.plusButton.clicked.connect(self.calc_plus)
         self.minusButton.clicked.connect(self.calc_minus)
         self.divideButton.clicked.connect(self.calc_divide)
@@ -42,6 +34,17 @@ class CalcWindow(QWidget):
         self.equalsButton.clicked.connect(self.calc_equals)
         self.resetButton.clicked.connect(self.calc_reset)
 
+        """ Функционал dota mode """
+        self.numsLine.setPlaceholderText("Введите количество очков")
+
+        self.strengthCheck.clicked.connect(lambda: self.dota_check_s())
+        self.dexterityCheck.clicked.connect(lambda: self.dota_check_d())
+        self.intelligenceCheck.clicked.connect(lambda: self.dota_check_i())
+
+        self.resultButton.clicked.connect(self.dota_result)
+
+        """ Функционал cs mode """
+
         self.back_btn = QPushButton('<-', self)
         self.back_btn.setStyleSheet("""
             QPushButton {
@@ -56,7 +59,7 @@ class CalcWindow(QWidget):
         self.back_btn.resize(40, 20)
         self.back_btn.clicked.connect(self.back)
 
-    """ Функции classic mode"""
+    """ Функции classic mode """
 
     def calc_plus(self):
         self.answer.setText(self.answer.text() + '+')
@@ -107,26 +110,50 @@ class CalcWindow(QWidget):
     def calc_reset(self):
         self.answer.setText('')
 
+    """ Функции dota mode """
+
+    def dota_check_s(self):
+        if self.strengthCheck.isChecked:
+            self.attribute = 'strength'
+            self.dexterityCheck.setChecked(False)
+            self.intelligenceCheck.setChecked(False)
+        else:
+            self.attribute = ''
+
+    def dota_check_d(self):
+        if self.dexterityCheck.isChecked:
+            self.attribute = 'dexterity'
+            self.strengthCheck.setChecked(False)
+            self.intelligenceCheck.setChecked(False)
+        else:
+            self.attribute = ''
+
+    def dota_check_i(self):
+        if self.intelligenceCheck.isChecked:
+            self.attribute = 'intelligence'
+            self.dexterityCheck.setChecked(False)
+            self.strengthCheck.setChecked(False)
+        else:
+            self.attribute = ''
+
+    def dota_result(self):
+        if self.attribute == 'strength':
+            self.resultLabel_2.setText(
+                f'Герой атрибута Сила получит: \n {int(self.numsLine.text()) * 22} здоровья \n {int(self.numsLine.text()) + 0.1} Восстановление здоровья')
+
+        elif self.attribute == 'dexterity':
+            self.resultLabel_2.setText(
+                f'Герой атрибута Ловкость получит: \n {int(self.numsLine.text()) * 0.167} брони \n {int(self.numsLine.text())} скорость атаки')
+
+        elif self.attribute == 'intelligence':
+            self.resultLabel_2.setText(
+                f'Герой атрибута Интелект получит: \n Максимальный запас маны увеличится на {int(self.numsLine.text()) * 12} \n {int(self.numsLine.text()) * 0.05} восстановвление маны \n {int(self.numsLine.text()) * 0.001} сопротивление магии')
+
+        else:
+            self.resultLabel_2.setText('Выберите атрибут')
+
     def back(self):
         """ Возврат в предыдущее окно """
         self.last_window.show()
         hp.center_window(self.last_window)
         self.close()
-
-    def classic_mode(self, state):
-        if state == 0:
-            print('classic off')
-        elif state == 2:
-            print('classic on')
-
-    def cs_mode(self, state):
-        if state == 0:
-            print('cs off')
-        elif state == 2:
-            print('cs on')
-
-    def dota_mode(self, state):
-        if state == 0:
-            print('dota off')
-        elif state == 2:
-            print('dota on')

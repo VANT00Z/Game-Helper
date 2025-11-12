@@ -21,7 +21,7 @@ class MainWindow(QMainWindow):
         loadUi('templates/main_window.ui', self)
 
         """ Задаем иконку и название """
-        self.setWindowIcon(QIcon('resources/icon.png'))
+        self.setWindowIcon(QIcon('resources/Logo 3.png'))
         self.setWindowTitle('Game Helper')
 
         self.last_window = last_window  # <- Инициируем последнее окно

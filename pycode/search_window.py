@@ -14,7 +14,7 @@ class SearchWindow(QWidget):
 
         loadUi('templates/search.ui', self)
 
-        self.setWindowIcon(QIcon('resources/icon.png'))
+        self.setWindowIcon(QIcon('resources/Logo 3.png'))
         self.setWindowTitle('Поиск')
 
         self.searchLine.setPlaceholderText("Введите запрос для поиска...")

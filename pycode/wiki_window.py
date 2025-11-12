@@ -13,7 +13,7 @@ class WikiWindow(QWidget):
 
         loadUi('templates/wiki_window.ui', self)
 
-        self.setWindowIcon(QIcon('resources/icon.png'))
+        self.setWindowIcon(QIcon('resources/Logo 3.png'))
         self.setWindowTitle('wiki')
 
         self.dotaCheckBox.stateChanged.connect(self.on_dota_changed)
