@@ -24,7 +24,7 @@ def center_window(window):
     # Устанавливаем позицию
     window.move(x, y)
 
-\
+
 def center_window_on_screen(window, screen_number=0):
     """Центрирование окна на конкретном экране (для многомониторных систем)"""
     screens = QApplication.screens()
