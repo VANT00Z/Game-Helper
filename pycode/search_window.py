@@ -1,5 +1,4 @@
 import pycode.helper as hp
-import os
 import re
 from PyQt6.QtWidgets import QWidget, QPushButton
 from PyQt6.QtGui import QIcon
