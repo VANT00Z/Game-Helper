@@ -1,293 +1,385 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>1039</width>
-    <height>710</height>
-   </rect>
-  </property>
-  <property name="styleSheet">
-   <string notr="true">background-color: #f5f7fa;</string>
-  </property>
-  <property name="windowTitle">
-   <string>MainWindow</string>
-  </property>
-  <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" name="gridLayout_2">
-    <item row="0" column="0">
-     <layout class="QGridLayout" name="gridLayout" rowstretch="2,30" columnstretch="1,2,1,2,1">
-      <item row="0" column="1">
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="0" column="0">
-       <widget class="QPushButton" name="wiki_btn">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
+    <class>MainWindow</class>
+    <widget class="QMainWindow" name="MainWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1039</width>
+                <height>710</height>
+            </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">
-          QPushButton {
-              background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #4a90e2, stop:1 #1a73e8);
-              color: white;
-              font-size: 16px;
-              font-weight: 600;
-              padding: 12px 24px;
-              border-radius: 12px;
-              border: none;
-              margin: 10px;
-          }
-          QPushButton:hover {
-              background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #5a9ff2, stop:1 #2a83f8);
-          }
-          QPushButton:pressed {
-              background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #3a80d2, stop:1 #0a63d8);
-          }
-         </string>
+            <string notr="true">background-color: #f0f2f5;</string>
         </property>
-        <property name="text">
-         <string>wiki</string>
+        <property name="windowTitle">
+            <string>MainWindow</string>
         </property>
-       </widget>
-      </item>
-      <item row="0" column="4">
-       <widget class="QPushButton" name="search_btn">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">
-          QPushButton {
-              background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #4a90e2, stop:1 #1a73e8);
-              color: white;
-              font-size: 16px;
-              font-weight: 600;
-              padding: 12px 24px;
-              border-radius: 12px;
-              border: none;
-              margin: 10px;
-          }
-          QPushButton:hover {
-              background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #5a9ff2, stop:1 #2a83f8);
-          }
-          QPushButton:pressed {
-              background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #3a80d2, stop:1 #0a63d8);
-          }
-         </string>
-        </property>
-        <property name="text">
-         <string>Поиск</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="2">
-       <widget class="QPushButton" name="calc_btn">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">
-          QPushButton {
-              background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #4a90e2, stop:1 #1a73e8);
-              color: white;
-              font-size: 16px;
-              font-weight: 600;
-              padding: 12px 32px;
-              border-radius: 12px;
-              border: none;
-              margin: 10px;
-          }
-          QPushButton:hover {
-              background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #5a9ff2, stop:1 #2a83f8);
-          }
-          QPushButton:pressed {
-              background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #3a80d2, stop:1 #0a63d8);
-          }
-         </string>
-        </property>
-        <property name="text">
-         <string>Калькулятор</string>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="3">
-       <spacer name="horizontalSpacer_2">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="1" column="2">
-       <widget class="QLabel" name="label">
-        <property name="maximumSize">
-         <size>
-          <width>400</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">
-          font-size: 28px;
-          font-weight: 700;
-          color: #2c3e50;
-          letter-spacing: 1px;
-          text-decoration: underline;
-         </string>
-        </property>
-        <property name="text">
-         <string>GameHelper</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1039</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">
-     QMenuBar {
-         background: #ffffff;
-         color: #2c3e50;
-         font-size: 14px;
-         font-weight: 600;
-         padding: 4px;
-         border-bottom: 1px solid #e0e4e8;
-     }
-     QMenuBar::item {
-         padding: 6px 12px;
-         border-radius: 6px;
-         background: transparent;
-     }
-     QMenuBar::item:selected {
-         background: #e8f0fe;
-         color: #1a73e8;
-     }
-     QMenuBar::item:pressed {
-         background: #d2e3fc;
-         color: #1a73e8;
-     }
-     QMenu {
-         background: #ffffff;
-         color: #2c3e50;
-         border: 1px solid #e0e4e8;
-         border-radius: 10px;
-         padding: 6px;
-     }
-     QMenu::item {
-         padding: 10px 35px;
-         border-radius: 8px;
-         background: transparent;
-     }
-     QMenu::item:selected {
-         background: #e8f0fe;
-         color: #1a73e8;
-     }
-     QMenu::item:pressed {
-         background: #d2e3fc;
-     }
-     QMenu::separator {
-         height: 1px;
-         background: #e0e4e8;
-         margin: 4px 10px;
-     }
-    </string>
-   </property>
-   <widget class="QMenu" name="menu">
-    <property name="title">
-     <string>Активности</string>
-    </property>
-    <addaction name="actionAbout"/>
-    <addaction name="actionW"/>
-    <addaction name="actionCalc"/>
-    <addaction name="actionSearch"/>
-    <addaction name="action"/>
-   </widget>
-   <addaction name="menu"/>
-  </widget>
-  <widget class="QStatusBar" name="statusbar">
-   <property name="styleSheet">
-    <string notr="true">
-     QStatusBar {
-         background: #ffffff;
-         color: #5a6a7a;
-         font-size: 13px;
-         border-top: 1px solid #e0e4e8;
-     }
-    </string>
-   </property>
-  </widget>
-  <action name="actionAbout">
-   <property name="text">
-    <string>О приложении</string>
-   </property>
-  </action>
-  <action name="actionW">
-   <property name="text">
-    <string>Wiki</string>
-   </property>
-  </action>
-  <action name="actionCalc">
-   <property name="text">
-    <string>Калькулятор</string>
-   </property>
-  </action>
-  <action name="actionSearch">
-   <property name="text">
-    <string>Поиск</string>
-   </property>
-  </action>
-  <action name="action">
-   <property name="text">
-    <string>Помощь</string>
-   </property>
-  </action>
- </widget>
- <resources/>
- <connections/>
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QGridLayout" name="gridLayout_2">
+                <item row="0" column="0">
+                    <layout class="QGridLayout" name="gridLayout" rowstretch="2,30"
+                        columnstretch="1,2,1,2,1,2,1">
+
+
+                        <item row="0" column="1">
+                            <spacer name="horizontalSpacer_Left">
+                                <property name="orientation">
+                                    <enum>Qt::Horizontal</enum>
+                                </property>
+                                <property name="sizeHint" stdset="0">
+                                    <size>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                        </item>
+
+
+                        <item row="0" column="0">
+                            <widget class="QPushButton" name="wiki_btn">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="cursor">
+                                    <cursorShape>PointingHandCursor</cursorShape>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">
+                                        QPushButton {
+                                        background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0
+                                        #667eea, stop:1 #5a67d8);
+                                        color: white;
+                                        font-size: 15px;
+                                        font-weight: 700;
+                                        padding: 14px 28px;
+                                        border-radius: 16px;
+                                        border: 1px solid rgba(255, 255, 255, 0.15);
+                                        margin: 8px;
+                                        }
+                                        QPushButton:hover {
+                                        background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0
+                                        #7b93f5, stop:1 #6b7ae3);
+                                        }
+                                        QPushButton:pressed {
+                                        background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0
+                                        #4c5ec7, stop:1 #4351b5);
+                                        }
+                                    </string>
+                                </property>
+                                <property name="text">
+                                    <string>Wiki</string>
+                                </property>
+                            </widget>
+                        </item>
+
+                        <item row="0" column="2">
+                            <widget class="QPushButton" name="steam_search_btn">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="cursor">
+                                    <cursorShape>PointingHandCursor</cursorShape>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">
+                                        QPushButton {
+                                        background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0
+                                        #667eea, stop:1 #5a67d8);
+                                        color: white;
+                                        font-size: 15px;
+                                        font-weight: 700;
+                                        padding: 14px 28px;
+                                        border-radius: 16px;
+                                        border: 1px solid rgba(255, 255, 255, 0.15);
+                                        margin: 8px;
+                                        }
+                                        QPushButton:hover {
+                                        background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0
+                                        #7b93f5, stop:1 #6b7ae3);
+                                        }
+                                        QPushButton:pressed {
+                                        background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0
+                                        #4c5ec7, stop:1 #4351b5);
+                                        }
+                                    </string>
+                                </property>
+                                <property name="text">
+                                    <string>SteamSearch</string>
+                                </property>
+                            </widget>
+                        </item>
+
+
+                        <item row="0" column="3">
+                            <spacer name="horizontalSpacer_Center">
+                                <property name="orientation">
+                                    <enum>Qt::Horizontal</enum>
+                                </property>
+                                <property name="sizeHint" stdset="0">
+                                    <size>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                        </item>
+
+
+                        <item row="0" column="4">
+                            <widget class="QPushButton" name="calc_btn">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="cursor">
+                                    <cursorShape>PointingHandCursor</cursorShape>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">
+                                        QPushButton {
+                                        background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0
+                                        #667eea, stop:1 #5a67d8);
+                                        color: white;
+                                        font-size: 15px;
+                                        font-weight: 700;
+                                        padding: 14px 32px;
+                                        border-radius: 16px;
+                                        border: 1px solid rgba(255, 255, 255, 0.15);
+                                        margin: 8px;
+                                        }
+                                        QPushButton:hover {
+                                        background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0
+                                        #7b93f5, stop:1 #6b7ae3);
+                                        }
+                                        QPushButton:pressed {
+                                        background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0
+                                        #4c5ec7, stop:1 #4351b5);
+                                        }
+                                    </string>
+                                </property>
+                                <property name="text">
+                                    <string>Калькулятор</string>
+                                </property>
+                            </widget>
+                        </item>
+
+                        <item row="0" column="6">
+                            <widget class="QPushButton" name="search_btn">
+                                <property name="sizePolicy">
+                                    <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="cursor">
+                                    <cursorShape>PointingHandCursor</cursorShape>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">
+                                        QPushButton {
+                                        background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0
+                                        #667eea, stop:1 #5a67d8);
+                                        color: white;
+                                        font-size: 15px;
+                                        font-weight: 700;
+                                        padding: 14px 28px;
+                                        border-radius: 16px;
+                                        border: 1px solid rgba(255, 255, 255, 0.15);
+                                        margin: 8px;
+                                        }
+                                        QPushButton:hover {
+                                        background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0
+                                        #7b93f5, stop:1 #6b7ae3);
+                                        }
+                                        QPushButton:pressed {
+                                        background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0
+                                        #4c5ec7, stop:1 #4351b5);
+                                        }
+                                    </string>
+                                </property>
+                                <property name="text">
+                                    <string>Поиск</string>
+                                </property>
+                            </widget>
+                        </item>
+
+
+                        <item row="0" column="5">
+                            <spacer name="horizontalSpacer_Right">
+                                <property name="orientation">
+                                    <enum>Qt::Horizontal</enum>
+                                </property>
+                                <property name="sizeHint" stdset="0">
+                                    <size>
+                                        <width>40</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                        </item>
+
+
+                        <item row="1" column="0" colspan="7">
+                            <widget class="QLabel" name="label">
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>16777215</width>
+                                        <height>16777215</height>
+                                    </size>
+                                </property>
+                                <property name="styleSheet">
+                                    <string notr="true">
+                                        font-size: 32px;
+                                        font-weight: 800;
+                                        color: #2d3748;
+                                        letter-spacing: 2px;
+                                        padding: 20px;
+                                        background: transparent;
+                                    </string>
+                                </property>
+                                <property name="text">
+                                    <string>GameHelper</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>Qt::AlignCenter</set>
+                                </property>
+                            </widget>
+                        </item>
+
+                    </layout>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QMenuBar" name="menubar">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>1039</width>
+                    <height>24</height>
+                </rect>
+            </property>
+            <property name="styleSheet">
+                <string notr="true">
+                    QMenuBar {
+                    background: #ffffff;
+                    color: #4a5568;
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding: 4px;
+                    border-bottom: 1px solid #e2e8f0;
+                    }
+                    QMenuBar::item {
+                    padding: 6px 16px;
+                    border-radius: 8px;
+                    background: transparent;
+                    margin: 2px;
+                    }
+                    QMenuBar::item:selected {
+                    background: #edf2f7;
+                    color: #5a67d8;
+                    }
+                    QMenuBar::item:pressed {
+                    background: #e2e8f0;
+                    color: #4c51bf;
+                    }
+                    QMenu {
+                    background: #ffffff;
+                    color: #4a5568;
+                    border: 1px solid #e2e8f0;
+                    border-radius: 12px;
+                    padding: 8px;
+                    }
+                    QMenu::item {
+                    padding: 10px 40px;
+                    border-radius: 8px;
+                    background: transparent;
+                    }
+                    QMenu::item:selected {
+                    background: #edf2f7;
+                    color: #5a67d8;
+                    }
+                    QMenu::item:pressed {
+                    background: #e2e8f0;
+                    color: #4c51bf;
+                    }
+                    QMenu::separator {
+                    height: 1px;
+                    background: #e2e8f0;
+                    margin: 6px 15px;
+                    }
+                </string>
+            </property>
+            <widget class="QMenu" name="menu">
+                <property name="title">
+                    <string>Активности</string>
+                </property>
+                <addaction name="actionW" />
+                <addaction name="actionSteamSearch" />
+                <addaction name="separator" />
+                <addaction name="actionCalc" />
+                <addaction name="actionSearch" />
+                <addaction name="separator" />
+                <addaction name="actionAbout" />
+                <addaction name="action" />
+            </widget>
+            <addaction name="menu" />
+        </widget>
+        <widget class="QStatusBar" name="statusbar">
+            <property name="styleSheet">
+                <string notr="true">
+                    QStatusBar {
+                    background: #ffffff;
+                    color: #718096;
+                    font-size: 13px;
+                    border-top: 1px solid #e2e8f0;
+                    padding: 4px;
+                    }
+                </string>
+            </property>
+        </widget>
+        <action name="actionAbout">
+            <property name="text">
+                <string>О приложении</string>
+            </property>
+        </action>
+        <action name="actionW">
+            <property name="text">
+                <string>Wiki</string>
+            </property>
+        </action>
+        <action name="actionCalc">
+            <property name="text">
+                <string>Калькулятор</string>
+            </property>
+        </action>
+        <action name="actionSearch">
+            <property name="text">
+                <string>Поиск</string>
+            </property>
+        </action>
+        <action name="actionSteamSearch">
+            <property name="text">
+                <string>SteamSearch</string>
+            </property>
+        </action>
+        <action name="action">
+            <property name="text">
+                <string>Помощь</string>
+            </property>
+        </action>
+    </widget>
+    <resources />
+    <connections />
 </ui>
