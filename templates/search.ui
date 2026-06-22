@@ -10,6 +10,9 @@
     <height>684</height>
    </rect>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #f5f7fa;</string>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
@@ -21,7 +24,7 @@
        <item alignment="Qt::AlignHCenter">
         <widget class="QLabel" name="title">
          <property name="styleSheet">
-          <string notr="true">font-size: 24px; font-weight: 900; border-radius: 10px;</string>
+          <string notr="true">font-size: 28px; font-weight: 700; color: #2c3e50; letter-spacing: 1px;</string>
          </property>
          <property name="text">
           <string>Поиск</string>
@@ -37,7 +40,7 @@
      <item row="2" column="2" colspan="2" alignment="Qt::AlignHCenter">
       <widget class="QLabel" name="resultLabel">
        <property name="styleSheet">
-        <string notr="true">font-size: 16px; font-weight: 600; border-radius: 10px;</string>
+        <string notr="true">font-size: 18px; font-weight: 600; color: #5a6a7a; padding: 8px;</string>
        </property>
        <property name="text">
         <string>Результаты по запросу:</string>
@@ -60,10 +63,20 @@
      <item row="1" column="2">
       <widget class="QLineEdit" name="searchLine">
        <property name="styleSheet">
-        <string notr="true">padding: 10px;
-font-size: 14px;
-border: 2px solid #ccc;
-border-radius: 10px;</string>
+        <string notr="true">
+         QLineEdit {
+             border: 2px solid #e0e4e8;
+             border-radius: 10px;
+             padding: 12px 15px;
+             font-size: 16px;
+             background: #ffffff;
+             color: #2c3e50;
+         }
+         QLineEdit:focus {
+             border-color: #1a73e8;
+             background: #f8faff;
+         }
+        </string>
        </property>
       </widget>
      </item>
@@ -81,7 +94,20 @@ border-radius: 10px;</string>
       </spacer>
      </item>
      <item row="3" column="1" colspan="4">
-      <widget class="QTextBrowser" name="searchBrowser"/>
+      <widget class="QTextBrowser" name="searchBrowser">
+       <property name="styleSheet">
+        <string notr="true">
+         QTextBrowser {
+             border: 1px solid #e0e4e8;
+             border-radius: 12px;
+             background: #ffffff;
+             padding: 15px;
+             font-size: 15px;
+             color: #2c3e50;
+         }
+        </string>
+       </property>
+      </widget>
      </item>
      <item row="1" column="3">
       <widget class="QPushButton" name="searchButton">
@@ -89,15 +115,23 @@ border-radius: 10px;</string>
         <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
-        <string notr="true">QPushButton {
-                padding: 10px 20px;
-                font-size: 14px;
-                background-color: #007bff;
-                color: white;
-                border: none;
-                border-radius: 5px;
-            }
-</string>
+        <string notr="true">
+         QPushButton {
+             background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #4a90e2, stop:1 #1a73e8);
+             color: white;
+             font-size: 16px;
+             font-weight: 600;
+             padding: 12px 24px;
+             border-radius: 10px;
+             border: none;
+         }
+         QPushButton:hover {
+             background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #5a9ff2, stop:1 #2a83f8);
+         }
+         QPushButton:pressed {
+             background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #3a80d2, stop:1 #0a63d8);
+         }
+        </string>
        </property>
        <property name="text">
         <string>Найти</string>

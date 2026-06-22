@@ -10,6 +10,9 @@
     <height>816</height>
    </rect>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #f5f7fa;</string>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
@@ -18,6 +21,18 @@
     <layout class="QGridLayout" name="gridLayout">
      <item row="4" column="0" colspan="2">
       <widget class="QTextBrowser" name="textDota">
+       <property name="styleSheet">
+        <string notr="true">
+         QTextBrowser {
+             border: 1px solid #e0e4e8;
+             border-radius: 12px;
+             background: #ffffff;
+             padding: 15px;
+             font-size: 15px;
+             color: #2c3e50;
+         }
+        </string>
+       </property>
        <property name="html">
         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -29,6 +44,18 @@ p, li { white-space: pre-wrap; }
      </item>
      <item row="5" column="0" colspan="2">
       <widget class="QTextBrowser" name="textCs">
+       <property name="styleSheet">
+        <string notr="true">
+         QTextBrowser {
+             border: 1px solid #e0e4e8;
+             border-radius: 12px;
+             background: #ffffff;
+             padding: 15px;
+             font-size: 15px;
+             color: #2c3e50;
+         }
+        </string>
+       </property>
        <property name="html">
         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -43,6 +70,27 @@ p, li { white-space: pre-wrap; }
        <property name="cursor">
         <cursorShape>PointingHandCursor</cursorShape>
        </property>
+       <property name="styleSheet">
+        <string notr="true">
+         QCheckBox {
+             color: #5a6a7a;
+             font-weight: 500;
+             font-size: 16px;
+             spacing: 8px;
+         }
+         QCheckBox::indicator {
+             width: 18px;
+             height: 18px;
+             border-radius: 5px;
+             border: 2px solid #b0bec5;
+             background: #ffffff;
+         }
+         QCheckBox::indicator:checked {
+             background: #1a73e8;
+             border-color: #1a73e8;
+         }
+        </string>
+       </property>
        <property name="text">
         <string>Counter Strike 2</string>
        </property>
@@ -54,17 +102,35 @@ p, li { white-space: pre-wrap; }
         <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
-        <string notr="true">font-size: 16px; font-weight: 450;</string>
+        <string notr="true">
+         QCheckBox {
+             color: #5a6a7a;
+             font-weight: 500;
+             font-size: 16px;
+             spacing: 8px;
+         }
+         QCheckBox::indicator {
+             width: 18px;
+             height: 18px;
+             border-radius: 5px;
+             border: 2px solid #b0bec5;
+             background: #ffffff;
+         }
+         QCheckBox::indicator:checked {
+             background: #1a73e8;
+             border-color: #1a73e8;
+         }
+        </string>
        </property>
        <property name="text">
         <string>DOTA 2</string>
        </property>
       </widget>
      </item>
-     <item row="0" column="0" colspan="2">
-      <widget class="QPushButton" name="wiki_btn">
+     <item row="0" column="0" colspan="2" alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="wikiLabel">
        <property name="styleSheet">
-        <string notr="true">font-size: 24px; font-weight: 900; border-radius: 10px;</string>
+        <string notr="true">font-size: 28px; font-weight: 700; color: #2c3e50; letter-spacing: 1px;</string>
        </property>
        <property name="text">
         <string>WIKI</string>
