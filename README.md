@@ -23,7 +23,8 @@
 
 ## Запуск
 
-Для запуска приложения запустите [Game Helper.exe](Game-Helper.exe)
+Для запуска приложения запустите [Game Helper.exe](Game-Helper.exe) \
+Или файл-исполнитель - [main.py](main.py).
 
 # Структура
 
